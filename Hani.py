@@ -801,7 +801,7 @@ MATLABI DUNIYA MATLABI LOG💔💔💔💔💔💔💔
 		])
 		
 		sys.stdout.write(
-			"\r\r %s[>_] [HANI-OLD] : %s/%s -> \033[0;92m [ HANI-OK:%s ]- \033[0;91m[HANI-CP:%s ]"%(B,self.loop, len(self.id), len(self.ok), len(self.cp))
+			"\r\r %s[>_] [ HANI-OLD] : %s/%s -> \033[0;92m [ HANI-OK:%s ]- \033[0;91m[HANI-CP:%s ]"%(B,self.loop, len(self.id), len(self.ok), len(self.cp))
 		); sys.stdout.flush()
 		for pw in pwx:
 			pw = pw.lower()
